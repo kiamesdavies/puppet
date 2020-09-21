@@ -11,3 +11,4 @@ echo 'Defaults        secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr
 
 mv /etc/puppetlabs/code/environments/production /etc/puppetlabs/code/environments/production.simple
 git clone https://github.com/kiamesdavies/puppet.git /etc/puppetlabs/code/environments/production
+puppet apply /etc/puppetlabs/code/environments/production/manifests/
