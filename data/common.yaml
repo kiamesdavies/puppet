@@ -28,7 +28,7 @@
       - "%{lookup('ips.office1')}"
       - "%{lookup('ips.office2')}"
     vpn_allow_list: "%{alias('firewall_allow_list')}"
-    vpn_allow_list_lookup: "%{lookup('firewall_allow_list', Array[String])}"
+    vpn_allow_list_lookup: "%{lookup('firewall_allow_list', Array)}"
     cms_parameters:
       static:
         sites_root: '/var/www/sites'
