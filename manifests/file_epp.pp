@@ -1,5 +1,5 @@
 file { '/usr/local/bin/backup':
-  content => epp('puppet:///files/backup.sh.epp',
+  content => epp('/etc/puppetlabs/code/environments/production/files/backup.sh.epp',
     {
       'data_dir' => '/var/log',
       }
