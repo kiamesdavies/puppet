@@ -1,4 +1,4 @@
 #!/bin/bash
 cd /etc/puppetlabs/code/environments/production && git pull
-r10k puppetfile install
+/opt/puppetlabs/puppet/bin/r10k puppetfile install
 /opt/puppetlabs/bin/puppet apply manifests/
